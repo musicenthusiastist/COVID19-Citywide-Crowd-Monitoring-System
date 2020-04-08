@@ -2,33 +2,22 @@
 ![HackQuarantine](https://github.com/musicenthusiastist/COVID19-Citywide-Crowd-Monitoring-System/blob/master/overview_modified.png "Our Interpretation of Sonification")
 
 **Project Descriptions**
+This project provides a system prototype for the government/health department to mitigate the chance of community spread by keeping track of the occupancy of major grocery stores within a city or a geographical area. Each store is equipped with a people counter. The people counter is connected to the store’s gateway, through which it sends real-time people counts to the internet. A dedicated server is configured for this system to receive and store these data in a database. The data for each store is then computed as occupancy rate and is logged in a convenient webapp for citizens to browse. In this way, people can avoid densely occupied stores, thus lower the chance of community spread. 
 
-Have you ever wondered how data can be represented aurally? And fellow musicians, are you looking for new inspirations of your music? If you answered yes, I encourage you to take a look at our **Data Sonification** project. 
-
-Our project provides a method to transform meteorological data into a unique piece of music. **Unlike most music compositions, our piece of music is encoded with climate data** - `the annual temperature` and `the annual total number of natural disasters` of Ontario from 1930 to 2016. By listening to our music, you will get the overall pattern of Ontario's climate in this period. We added our own interpretation when assigning instruments for the background. In our opinion, our data sonification music is more expressive than a 2-dimensional data visualization product, because it adds the time dimension in. 
-
-**Our approaches include:**
-- Data Finding: 
-  + **the annual temperature of Ontario from 1930 to 2016** (hereinafter referred to as `*temp_data*`), 
-  + **the annual total number of natural disasters in Ontario from 1930 to 2016** (hereinafter referred to as `*count_disaster*`).
-- Statistical analysis using **SAS**: 
-  + analyse the correlation of `*temp_data*` and `*count_disaster*`. 
-- Scripting: 
-  + parse JSON and convert to CSV.
-  + extract relevant data from databases.
-- Employ a **Music Algorithm** to transform the CSV to MIDI: 
-  + `pitch input` = `*temp_data*`, and `note-duration input` = inverse of `*count_disaster*`. That is, at a specific instant of time, the higher a pitch is, the hotter that year used to be; the faster the notes are played, the more natural disasters that year used to have.
-- **DAW** (Digital Audio Workstation): 
-  + edit the MIDI generated from music algorithm.
-  + compose intro, backing track, and ending.
-- Postproduction
+**Project Architecture:**
+- Hardware: 
+  + Arduino Uno: serves as a gateway
+  + IR sensor module: serves as people counters
+- Software: 
+  + Front-end: HTML, CSS, Javascript
+  + Back-end: Node.js
+  + Scripting: Python: serial communication, post data to server.
 
 **This project is meant to:**
-  1. Demonstrate how data science and artworks can be combined. 
-  2. Explore new ways of data representations. 
-  3. Be used in non-profit commercials to call for public awareness about climate change. 
+  1. Provide an easy-to-deploy system to control the community spread of COVID-19. 
+  2. Be used in future pandemics & outbreaks & other emergency situations. 
 
-## Our Demo Video
+## Demo Video
 <a href="https://youtu.be/xhHwQcUd4Yk
 " target="_blank"><img src="http://img.youtube.com/vi/xhHwQcUd4Yk/0.jpg" 
 alt="COVID19_Project" width="530" height="350" border="10" /></a>
