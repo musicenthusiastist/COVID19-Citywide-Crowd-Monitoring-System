@@ -1,5 +1,5 @@
 # Hack Quarantine Project
-![HackQuarantine](https://github.com/musicenthusiastist/COVID19-Citywide-Crowd-Monitoring-System/blob/master/NewThumb_Moment.jpg "Our Interpretation of Sonification")
+![HackQuarantine](https://github.com/musicenthusiastist/COVID19-Citywide-Crowd-Monitoring-System/blob/master/overview_modified.png "Our Interpretation of Sonification")
 
 **Project Descriptions**
 
