@@ -1,5 +1,5 @@
 # Hack Quarantine Project
-![Data-Quintet](https://github.com/musicenthusiastist/Symphony-of-Climate-Data/blob/master/Images/OurIdea.JPG "Our Interpretation of Sonification")
+![Data-Quintet](https://github.com/musicenthusiastist/Symphony-of-Climate-Data/blob/master/NewThumb_Moment.jpg "Our Interpretation of Sonification")
 
 **Project Descriptions**
 
